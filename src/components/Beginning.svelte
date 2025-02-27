@@ -7,6 +7,6 @@
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore e t enim ad minim veniam, quis nostrud exercitation ullamco quantum presto. Lorem ipsum dolot sit omnia des.
         </p>
     </div>
-    <div class="mt-[60px] h-[232.5px] bg-[url(./images/rest6-home-forkk.png)] bg-no-repeat bg-contain bg-right">
+    <div class="mt-[60px] h-[232.5px] bg-[url(../images/rest6-home-forkk.png)] bg-no-repeat bg-contain bg-right">
     </div>
 </section>
