@@ -2,8 +2,8 @@
     let currentSlide = 0;
   
     let slides = [
-      { image: "./images/rest6-slider-slide111.jpg", text: ["PASTA"], overlayImage: "./images/rest6-fork.png" },
-      { image: "./images/rest6-slider-slide22.jpg", text: ["FROM", "TUSCANY"] },
+      { image: "../images/rest6-slider-slide111.jpg", text: ["PASTA"], overlayImage: "./images/rest6-fork.png" },
+      { image: "../images/rest6-slider-slide22.jpg", text: ["FROM", "TUSCANY"] },
     ];
   
     let interval;
