@@ -26,7 +26,7 @@
 </script>
   
 <section>
-  <div class="h-[441px] bg-[url(../images/rest6-gradient.png)] bg-center bg-no-repeat bg-cover p-16 flex flex-col items-center justify-center gap-y-[48px]">
+  <div class="h-[441px] bg-[url(./images/rest6-gradient.png)] bg-center bg-no-repeat bg-cover p-16 flex flex-col items-center justify-center gap-y-[48px]">
     <h2 class="font-[cormorant_garamond] text-center text-white text-4xl font-semibold">True & memorable taste made with love and tradition</h2>
     <p class="font-[poppins] text-center text-white text-[13px] font-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore e t enim ad minim veniam, quis nostrud exercitation ullamco quantum presto.</p>
       <img src="../images/rest6-flowers.png" alt="flowers" width="68" height="25">
