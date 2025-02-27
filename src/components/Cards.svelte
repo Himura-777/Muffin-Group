@@ -3,18 +3,18 @@
 
     const items = [
     {
-      background: '../images/rest6-home-box1.jpg',
-      icon: '../images/rest6-icon1.png',
+      background: './images/rest6-home-box1.jpg',
+      icon: './images/rest6-icon1.png',
       title: '20 years of\nexperience'
     },
     {
-      background: '../images/rest6-home-box2.jpg',
-      icon: '../images/rest6-icon2.png',
+      background: './images/rest6-home-box2.jpg',
+      icon: './images/rest6-icon2.png',
       title: 'Only fresh Italian\ningredients'
     },
     {
-      background: '../images/rest6-home-box3.jpg',
-      icon: '../images/rest6-icon-3.png',
+      background: './images/rest6-home-box3.jpg',
+      icon: './images/rest6-icon-3.png',
       title: 'Traditional recipes'
     }
   ];
