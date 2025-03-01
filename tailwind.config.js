@@ -1,3 +1,5 @@
+import aspectRatio from "@tailwindcss/aspect-ratio";
+
 export default {
 	content: ["./src/**/*.{html,svelte,js,ts}"],
 	theme: {
@@ -8,13 +10,9 @@ export default {
 				cormorant_garamond: ["Cormorant Garamond", "serif"],
 			},
 			screens: {
-				xs: "475px",
-				sm: "640px",
-				md: "768px",
-				lg: "1024px",
-				xl: "1240px",
+				l: "960px",
 			},
 		},
 	},
-	plugins: [],
+	plugins: [aspectRatio],
 };
