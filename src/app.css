@@ -5,3 +5,7 @@
 	--breakpoint-lg: 960px;
 	--breakpoint-xl: 1024px;
 }
+
+html {
+	scroll-behavior: smooth;
+}

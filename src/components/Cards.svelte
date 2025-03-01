@@ -20,7 +20,7 @@
 	];
 </script>
 
-<section class="mt-[120px] w-[634px] mx-auto md:w-[708px] xl:w-[1080px]">
+<section id="AboutUs" class="mt-[120px] w-[634px] mx-auto md:w-[708px] xl:w-[1080px]">
 	<h2
 		class="font-[cormorant_garamond] text-center text-black text-4xl font-semibold md:text-start lg:font-[48px]"
 	>

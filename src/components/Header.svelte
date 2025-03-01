@@ -1,10 +1,12 @@
 <script>
-	import Navigation from "../components/Navigation.svelte";
+	import MobileNavigation from "./MobileNavigation.svelte";
+	import Navigation from "./Navigation.svelte";
 </script>
 
-<section
+<section id="Welcome"
 	class="relative w-full h-[617px] bg-[url(../images/rest6-slider-slide111.jpg)] flex items-center justify-center bg-cover bg-center bg-no-repeat"
 >
+  <MobileNavigation />
 	<Navigation />
 	<div class="absolute inset-0 z-1 top-30">
 		<img

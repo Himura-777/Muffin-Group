@@ -9,7 +9,7 @@
 	];
 </script>
 
-<div class="mx-auto w-[84.02%] max-w-[1120px]">
+<div id="Contacts" class="mx-auto w-[84.02%] max-w-[1120px]">
 	<div>
 		<h2
 			class="font-[cormorant_garamond] text-white text-[53px] font-normal text-center"

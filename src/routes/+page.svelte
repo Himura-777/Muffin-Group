@@ -1,4 +1,6 @@
 <script>
+	import MobileNavigation from "../components/MobileNavigation.svelte";
+	import Navigation from "../components/Navigation.svelte";
 	import Header from "../components/Header.svelte";
 	import SliderIntroduction from "../components/SliderIntroduction.svelte";
 	import Cards from "../components/Cards.svelte";
