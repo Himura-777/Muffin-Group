@@ -1,33 +1,39 @@
 <script>
-	import { onMount } from 'svelte';
+	import { onMount } from "svelte";
 
+	let isMenuOpen = false;
 	let isOpen = false;
-  
-    
-    let scrollPosition = 0;
-    let showSecondMenu = false;
 
-    const handleScroll = () => {
-      scrollPosition = window.scrollY;
-      showSecondMenu = scrollPosition > 60;
-    };
-  
-    onMount(() => {
-      window.addEventListener('scroll', handleScroll);
-      return () => {
-        window.removeEventListener('scroll', handleScroll);
-      };
-    });
+	let scrollPosition = 0;
+	let showFixedMenu = false;
+
+	const handleScroll = () => {
+		scrollPosition = window.scrollY;
+		showFixedMenu = scrollPosition > 60;
+	};
+
+	onMount(() => {
+		window.addEventListener("scroll", handleScroll);
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+		};
+	});
 </script>
 
 <nav class="xl:hidden">
 	<div
-		class="absolute top-0 left-0 w-full h-[60px] px-3 flex items-center justify-end bg-[#2d2b2a] z-10 transition-opacity duration-500 {showSecondMenu ? 'opacity-0' : 'opacity-100'}"
+		class="absolute top-0 left-0 w-full h-[60px] px-3 flex items-center justify-end bg-[#2d2b2a] z-10 transition-opacity duration-500 {showFixedMenu
+			? 'opacity-0'
+			: 'opacity-100'}"
 	>
 		<a href="#0" class="absolute left-1/2 transform -translate-x-1/2">
 			<img src="./images/restaurant6_logo.png" alt="" />
 		</a>
-		<button aria-label="Menu"  on:click={() => isOpen = !isOpen} class="md:mr-[7%]">
+		<button
+			aria-label="Menu"
+			on:click={() => (isMenuOpen = !isMenuOpen)}
+			class="md:mr-[7%]"
+		>
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				width="40px"
@@ -43,21 +49,32 @@
 				/>
 			</svg>
 		</button>
-		<ul class={`absolute w-full left-0 top-[60px] text-center bg-[#2d2b2a] ${isOpen ? 'max-h-[1000px]' : 'max-h-0'} overflow-hidden transition-all duration-500`}>
-			{#each ["WELCOME", "ABOUT US", "MENU", "STORY", "CONTACT", "BUY NOW"] as item}
+		<ul
+			class={`absolute w-full left-0 top-[60px] text-center bg-[#2d2b2a] ${isMenuOpen ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0"} overflow-hidden transition-all duration-500`}
+		>
+			{#each ["WELCOME", "ABOUT US", "STORY", "CONTACT"] as item}
 				<li class="h-[44px] flex justify-center items-center">
-					<a href="#0" class="text-[13px] text-white font-[cormorant_garamond]">{item}</a>
+					<a href="#0" class="text-[13px] text-white font-[cormorant_garamond]"
+						>{item}</a
+					>
 				</li>
 			{/each}
 		</ul>
 	</div>
 
 	<div
-		class="fixed top-0 left-0 w-full h-[60px] px-3 flex items-center justify-end bg-[#2d2b2a] z-10 transition-all duration-300 {showSecondMenu ? 'h-[60px] opacity-100 translate-y-0' : 'h-0 opacity-0 translate-y-[-100%]'}">
+		class="fixed top-0 left-0 w-full h-[60px] px-3 flex items-center justify-end bg-[#2d2b2a] z-10 transition-all duration-300 {showFixedMenu
+			? 'h-[60px] opacity-100 translate-y-0'
+			: 'h-0 opacity-0 translate-y-[-100%]'}"
+	>
 		<a href="#0" class="absolute left-1/2 transform -translate-x-1/2">
 			<img src="./images/restaurant6_logo.png" alt="" />
 		</a>
-		<button aria-label="Menu"  on:click={() => isOpen = !isOpen} class="md:mr-[7%]">
+		<button
+			aria-label="Menu"
+			on:click={() => (isOpen = !isOpen)}
+			class="md:mr-[7%]"
+		>
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				width="40px"
@@ -73,10 +90,14 @@
 				/>
 			</svg>
 		</button>
-		<ul class={`absolute w-full left-0 top-[60px] text-center bg-[#2d2b2a] ${isOpen ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'} overflow-hidden transition-all duration-500`}>
-			{#each ["WELCOME", "ABOUT US", "MENU", "STORY", "CONTACT", "BUY NOW"] as item}
+		<ul
+			class={`absolute w-full left-0 top-[60px] text-center bg-[#2d2b2a] ${isOpen ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0"} overflow-hidden transition-all duration-500`}
+		>
+			{#each ["WELCOME", "ABOUT US", "STORY", "CONTACT"] as item}
 				<li class="h-[44px] flex justify-center items-center">
-					<a href="#0" class="text-[13px] text-white font-[cormorant_garamond]">{item}</a>
+					<a href="#0" class="text-[13px] text-white font-[cormorant_garamond]"
+						>{item}</a
+					>
 				</li>
 			{/each}
 		</ul>
